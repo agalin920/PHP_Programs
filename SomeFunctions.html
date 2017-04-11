@@ -1,0 +1,26 @@
+<html>
+    <p>
+	<?php
+	// Create an array and push on the names
+    // of your closest family and friends
+    $myFam = array();
+    
+    array_push($myFam, "Carmen");
+    array_push($myFam, "Adan");
+    array_push($myFam, "Marcos");
+    
+    
+	// Sort the list
+    sort($myFam);
+
+
+	// Randomly select a winner!
+    $winner = strtoupper($myFam[rand(0,count($myFam))]);
+    
+    
+	// Print the winner's name in ALL CAPS
+	print $winner;
+	
+	?>
+	</p>
+</html>
